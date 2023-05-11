@@ -4,7 +4,7 @@ This repository is related to the development of DQN-based recommendation engine
 ---
 ### System's workflow:
 
-![img.png](research/workflow.jpg)
+![img.png](research/workflow_en.jpg)
 
 ### Collecting a job dataset
 Training data (`./backend/dataset.xlsx `) was collected from the hh.ru portal according to the search query "artist" by asynchronous web scraping. You can read more about the collection algorithm, preprocessing and exploratory data analysis in the notebook ["Preprocessing & EDA"](https://github.com/turkunov/vacancy_recommender/blob/main/research/preprocessing_eda.ipynb). Next, the collected dataset was uploaded to the collection on the MongoDB cluster using `./backend/upload_dataset.py `.
