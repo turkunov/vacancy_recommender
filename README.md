@@ -22,4 +22,4 @@
 * `POST /api/write/`: POST-эндпоинт который принимает JSON-тело `{cum_reward, age, skill, action}` и затем записывает его в базу данных для наблюдений среды с целью дальнейшего переобучения DQN-агента.
 
 ### Поробуйте модель 
-Модель была успешно развернута на Railway. REST API можно испытать самому здесь: ([vacancyrecommender.up.railway.app](https://vacancyrecommender.up.railway.app/)).
+Модель была успешно развернута на Railway. REST API можно испытать самому здесь: [vacancyrecommender.up.railway.app](https://vacancyrecommender.up.railway.app/).
