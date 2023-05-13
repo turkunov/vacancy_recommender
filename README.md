@@ -1,6 +1,5 @@
-# vacancy_recommender
-Репозиторий посвящен разработке рекомендательной системы вакансий на основе RL-алгоритма DQN.
-[[Read in English](https://github.com/turkunov/vacancy_recommender/blob/main/README_en.md)]
+## vacancy_recommender
+##### Репозиторий посвящен разработке рекомендательной системы вакансий на основе RL-алгоритма DQN. [[Read in English](https://github.com/turkunov/vacancy_recommender/blob/main/README_en.md)]
 ---
 ### Общий воркфлоу
 
@@ -21,3 +20,6 @@
 Для взаимодействия агента с пользователем-средой был написан REST API на fastAPI с эндпоинтами:
 * `GET /api/recommend/{age: int}&{skill: str}&{preference: str}`: GET-эндпоинт для генерации рекомендации на основе состояния среды, являющейся массивом [`age`, `skill`]. Рекомендованные агентом вакансии затем сортируются на основе косинусного сходства между `preference` и описаниями вакансий на основе TF-IDF эмбеддинга.
 * `POST /api/write/`: POST-эндпоинт который принимает JSON-тело `{cum_reward, age, skill, action}` и затем записывает его в базу данных для наблюдений среды с целью дальнейшего переобучения DQN-агента.
+
+### Поробуйте модель 
+Модель была успешно развернута на Railway. REST API можно испытать самому [тут](vacancyrecommender.up.railway.app).

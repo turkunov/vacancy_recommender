@@ -1,5 +1,5 @@
-# vacancy_recommender
-This repository is related to the development of DQN-based recommendation engine.
+## vacancy_recommender
+##### This repository is related to the development of DQN-based recommendation engine.
 
 ---
 ### System's workflow:
@@ -21,3 +21,6 @@ For the sake of demonstration 5000 random observations `(state,action,reward)` w
 For the interaction of the agent with the user environment, a REST API was written in fastAPI with endpoints:
 * `GET /api/recommend/{age: int}&{skill: str}&{preference: str}`: GET is an endpoint for generating recommendations based on the state of the environment, which is an array of [`age`, `skill`]. The vacancies recommended by the agent are then sorted based on the cosine similarity between `preference` and job descriptions based on TF-IDF embedding.
 * `POST /api/write/`: A POST endpoint that accepts the JSON body `{cum_reward, age, skill, action}` and then writes it to the database for environment observations in order to further retrain the DQN agent.
+
+### Try the model for yourself
+The model has been successfully deployed to Railway. You can try out the REST API [here](vacancyrecommender.up.railway.app).
