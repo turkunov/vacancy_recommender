@@ -1,20 +1,10 @@
 {
-  "TAGS_META": [
-    {
-      "name": "write",
-      "description": "Добавление новой записи о состоянии в среде вида (s, a, r) в базу данных"
-    },
-    {
-      "name": "recommend",
-      "description": "Рекомендации на основе решения DQN-агента"
-    }
-  ],
   "CLIENT_META": {
     "title": "PDQN (Pretrained DQN) REST API",
     "description": "Интегрированный с DQN-агентом, делающим рекомендации вакансий, REST API",
     "contact": {
         "name": "Turkunov Y.",
-        "url": "https://t.me/jaroslawtu"
+        "url": "https://github.com/turkunov"
     },
     "version": "0.0.1"
   }

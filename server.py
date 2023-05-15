@@ -43,7 +43,13 @@ class envAddition(BaseModel):
     action: int
 
 # CORS для удобства отладки
-app.add_middleware(CORSMiddleware, allow_origins=["*"])
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 @app.post('/api/write/')
 def write(addition: envAddition):
