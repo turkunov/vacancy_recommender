@@ -23,4 +23,4 @@ For the interaction of the agent with the user environment, a REST API was writt
 * `POST /api/write/`: A POST endpoint that accepts the JSON body `{cum_reward, age, skill, action}` and then writes it to the database for environment observations in order to further retrain the DQN agent.
 
 ### Try the model for yourself
-The model has been successfully deployed to Railway. You can try out the REST API [here](vacancyrecommender.up.railway.app).
+The model has been successfully deployed to Railway. You can try out the REST API REST API here: [vacancyrecommender.up.railway.app](https://vacancyrecommender.up.railway.app/)
